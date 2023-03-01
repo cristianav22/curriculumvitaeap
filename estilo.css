@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 10;
+    font-family:'Roboto';
+}
+.container{
+    height: 120vh;
+    display: flex;
+}
+.info{
+    width: 400px;
+    background-color: rgb(2, 28, 28);
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.infopersonal{
+    margin-top: 20px;
+    
+}
+.infopersonal .foto{
+    border-radius: 20% 30% 50% 0%;
+    display: block;
+    margin: auto;
+    border: 3px solid #57f551;
+    padding: 8px;
+}
+.infopersonal h1 {
+    font-size: 32px;
+    color:antiquewhite;
+    margin-top: 32px;
+}
+.infopersonal p {
+    margin: 5px;
+    font-size: 20px;
+    color: darkgray;
+}
+.socialmedia {
+    margin: 24px;
+    font-size: 32px;  
+    
+}
+.fa-brands {
+    color: aliceblue;
+    cursor: pointer;
+}
+.fa-brands:hover{
+    color:orange
+}
+ 
+.portada {
+    position: top;
+    width: 100%;
+    background-image:  url("https://signoscv.com/wp-content/uploads/2021/11/DW6.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: bottom;
+    flex-direction: left;
+    justify-content: top;
+    text-align: center;
+    /*background-image: linear-gradient(to right, rgba(0,0,0,.6), rgba(0,0,1))*/
+}    
+.cajatextocv {
+    background: rgba(0, 0, 0, 0.748);
+    margin: 0 0 25px;
+    overflow: hidden;
+    padding: 50px;    
+}
+
+    .hojadevida {
+    margin-top: 105px;
+    width: 50%;
+}
+    .tablink {
+    position: right 25px;
+    background-color: #918b8b;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Set default styles for tab content */
+  .tabcontent {
+    color: white;
+    font-size: x-large;
+    display: none;
+    padding: 70px;
+    text-align: left;
+    border-radius: 50px;
+  }
+    
+  /* Style each tab content individually */
+  #Educacion {background-color:#4f0260;}
+  #Experiencia {background-color:#4665b4;}
+  #SoftSkills {background-color:rgb(234, 55, 11);}
+  #sobremi {background-color:orange;}
+
+.portada h1{
+    font: 'Golos';
+    font-weight: 400;
+    height: 90px;
+    background-color: rgba(0,0,0,.6);
+    font-size: 56px;
+    color: antiquewhite;
+    padding-top: 2%;
+}
+.portada p{
+    font-size: 24px;
+}
+.iconoescuela{
+    font-size: 100px;
+    text-align: right;
+}
+.iconoexperiencia{
+    font-size: 100px;
+    text-align: right;
+}
+.iconosoftsk{
+    font-size: 100px;
+    text-align: right;
+}
+.iconosobremi{
+    font-size: 100px;
+    text-align: right;
+}
+.descripcionmia{
+    margin-top: 10px;
+    font: 'Golos';
+    font-weight: 300;
+    font-style: italic;
+}

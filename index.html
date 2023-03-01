@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/e8788435e5.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e8788435e5.js" crossorigin="anonymous"></script>
+</head>
+<body>   
+    
+    <div class="container">
+        <section class="info">
+                <div class="infopersonal">
+                    <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="foto carnet de Villagra Cristian" class="foto"/>
+                        <h1>Cristian Villagra</h1>
+                        <p>Diseñador FrontEnd</p>
+                        <div class="socialmedia">
+                         <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                         <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                         <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+                         <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                         </div>
+                </div>                                                             
+        </section>
+                <section class="portada">
+                    <h1>Curriculum Vitae</h1>
+                    <div class="cajatextocv">
+                                    <div id="Educacion" class="tabcontent"> 
+                                    <div class="iconoescuela">
+                                    <i class="fa-solid fa-school-circle-check"></i>
+                                    </div>                
+                                        <h2>Educacion</h2>
+                                    <li>Instituto Belgrano - Cs. Humanisticas</li>
+                                    <li>Universidad Nacional de Catamarca - Lic. en Administracion</li>
+                                    <li>Argentina programa - Desarrollo FrontEnd</li>                
+                                    </div>            
+                                    <div id="Experiencia" class="tabcontent">
+                                    <div class="iconoexperiencia">
+                                    <i class="fa-solid fa-arrows-to-circle"></i>
+                                    </div>
+                                        <h2>Experiencia</h2>
+                                        <li>2003 - 2005: Atencion al cliente en Red Megatone</li>
+                                        <li>2006 - 2012: Responsable RRHH en El corte Ingles</li>
+                                        <li>2012 - 2023: Gerente Ssr en DICO Cencosud</li>                
+                                        </div>              
+                                    <div id="SoftSkills" class="tabcontent">
+                                        <div class="iconosoftsk">
+                                        <i class="fa-solid fa-hands-holding-circle"></i>
+                                        </div>
+                                        <h2>Soft Skills</h2>
+                                        <li>Proactividad</li>
+                                        <li>Liderazgo</li>
+                                        <li>Responsabilidad</li>
+                                        <li>Mediacion</li>
+                                        </div>                              
+                                    <div id="sobremi" class="tabcontent">
+                                        <div class="iconosobremi">
+                                        <i class="fa-solid fa-user-plus"></i>
+                                        </div>
+                                        <h2>Sobre mi</h2>
+                                            <div class="descripcionmia">
+                                            <p>"Soy una persona responsable, proactiva y con un gran liderazgo. He trabajado en diferentes áreas como atención al cliente, recursos humanos y gerencia, lo que me ha brindado una amplia experiencia y habilidades en la gestión de equipos y resolución de problemas. Soy apasionado por la atención al cliente y siempre busco ofrecer un servicio excepcional. Además, disfruto trabajar en equipo y tengo una actitud positiva y colaborativa. 
+                                            Si buscas a alguien con estas cualidades, no dudes en contactarme. ¡Será un placer trabajar contigo!"</p>
+                                            </div>
+                                        </div>
+                     </div>                   
+                                            
+                     
+                    <button class="tablink" onclick="openCity('Educacion', this, '#4f0260')" id="defaultOpen">Educacion</button>
+                    <button class="tablink" onclick="openCity('Experiencia', this, '#4665b4')">Experiencia</button>
+                    <button class="tablink" onclick="openCity('SoftSkills', this, 'rgb(234, 55, 11)')">Soft Skills</button>
+                    <button class="tablink" onclick="openCity('sobremi', this, 'orange')">Sobre mi</button>
+                
+                    <script>
+                     function openCity(cityName,elmnt,color) {
+                      var i, tabcontent, tablinks;
+                     tabcontent = document.getElementsByClassName("tabcontent");
+                     for (i = 0; i < tabcontent.length; i++) {
+                     tabcontent[i].style.display = "none";
+                     }
+                     tablinks = document.getElementsByClassName("tablink");
+                     for (i = 0; i < tablinks.length; i++) {
+                     tablinks[i].style.backgroundColor = "";
+                     }
+                     document.getElementById(cityName).style.display = "block";
+                     elmnt.style.backgroundColor = color;
+                
+                     }
+                    // Get the element with id="defaultOpen" and click on it
+                     document.getElementById("defaultOpen").click();
+                    </script>                                
+                </section>        
+    </div>    
+</body>
+</html>
